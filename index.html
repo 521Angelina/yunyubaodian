@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	<div class="box">
+		<header id="header" class="header">
+			<a href="#" class="return" id="return"></a>
+			<h1 id="lable">孕育宝典</h1>
+			<a href="#" class="search" id="search"></a>
+			<a href="#" class="collect" id="collect"></a>
+		</header>
+		<!-- 搜索页面 -->
+		<header class="sear" id="sear">
+			<p><input type="text" class="txt" id="txt" placeholder="请输入需要搜索内容..."></p>
+			<button class="btn1" id="btn1"></button>
+		</header>
+		<div class="content">
+			<!-- 一级菜单 -->
+			<div id="home" class="home">
+				<ul id="home_ul">
+					<li><a href="#list" id="yunqian" title="孕前准备"><img src="img/pic1.png"></a></li>
+					<li><a href="#list" id="yunzhong" title="孕中知识"><img src="img/pic2.png"></a></li>
+					<li><a href="#list" id="chanqian" title="产前知识"><img src="img/pic3.png"></a></li>
+					<li><a href="#list" id="chanhou" title="分娩产后"><img src="img/pic4.png"></a></li>
+					<li><a href="#list" id="chengzhang" title="幼儿成长指标"><img src="img/pic5.png"></a></li>
+					<li><a href="#list" id="fangzhi" title="幼儿常见病防治"><img src="img/pic6.png"></a></li>
+				</ul>
+			</div>
+			<!-- 收藏 -->
+			<div id="fav" class="fav">
+				<div id="favlist"></div>
+			</div>
+			<!-- 历史记录 -->
+			<div id="history">
+				<div id="hislist"></div>
+			</div>
+			<!-- 设置 -->
+			<div id="confing">
+				<div class="box1" id="box1">
+					<span>有可更新数据，是否自动更新</span>
+					<p class="onoff">
+						<input type="checkbox" id="onoff">
+						<label for="onoff" id="onoff"></label>
+					</p>
+				</div>
+				<div class="box2" id="box2">
+					<p class="btn">
+						<span>字体大小</span>
+						<span>
+							<input type="radio" name="radio" id="btn">
+							<label for="btn"></label>
+						</span>　小
+						<span><input type="radio" name="radio" id="btn1">
+							<label for="btn1"></label>
+						</span>　中
+						<span>
+							<input type="radio" name="radio" id="btn2">
+							<label for="btn2"></label>
+						</span>　大
+					</p>
+				</div>
+			</div>
+			<!-- 二级菜单 -->
+			<div class="list" id="list">
+				<div class="datalist" id="datalist"></div>
+			</div>
+			<!-- 三级菜单 -->
+			<div id="date" class="date">
+				<div class="datalis" id="datalis">
+				</div>
+			</div>
+			<!-- 搜索页面 -->
+			<div id="term">
+				<div id="termp">正在搜索……</div>
+			</div>
+			<!-- 搜索二 -->
+			<div id="termsea">
+				<div id="seachbox2" class="seachbox2">
+					
+				</div>
+			</div>
+		</div>
+		<!-- 尾部 -->
+		<footer>
+			<ul id="footernav">
+				<li><a href="#home" title="孕育宝典">首页<br><small>home</small></a></li>
+				<li><a href="#fav" title="收藏">收藏<br><small>favorite</small></a></li>
+				<li><a href="#history" title="历史记录">历史记录<br><small>history</small></a></li>
+				<li><a href="#confing" title="设置">设置<br><small>confing</small></a></li>
+			</ul>
+			<!-- 滑块 -->
+			<p class="mark" id="mark"></p>
+		</footer>
+	</div>
+	<script src="js/iscroll5.js"></script>
+	<script src="js/zepto.min.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>
